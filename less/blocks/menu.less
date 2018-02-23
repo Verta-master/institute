@@ -1,0 +1,55 @@
+.menu {
+  
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu__item {
+  margin-left: 50px;
+  position: relative;
+  
+  &:hover {
+    .menu__sublist {
+      display: block;
+    }
+  }
+}
+
+.menu__link {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @red;
+    transition: ease-out 0.3s;
+  }
+}
+
+.menu__open {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/icon-down-arrow.png);
+  background-repeat: no-repeat;
+  background-size: 11px 6px;
+  background-position: center;
+}
+
+.menu__sublist {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
