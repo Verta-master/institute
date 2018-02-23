@@ -1,0 +1,41 @@
+.subscribe {
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    opacity: 0.75;
+  }
+}
+
+.subscribe__field {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.subscribe__input {
+  width: 438px;
+  height: 48px;
+  padding: 0 25px;
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.subscribe__btn {
+  width: 48px;
+  height: 48px;
+  background-color: @red;
+  transition: ease-out 0.3s;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+    transition: ease-out 0.3s;
+  }
+}

@@ -212,12 +212,26 @@
     </section>
     
     <section class="expert wrapper" id="about">
+      <h2>эксперты</h2>
+      <h3>Что о нас говорят люди?</h3>
       <div class="swiper-container expert__slider">
         <ul class="swiper-wrapper">
           <li class="swiper-slide expert__item">
-            
+            <p>Nulla ut leo purus. Suspendisse ornare diam et urna aliquam, nec vestibulum odio dapibus. Aenean arcu metus, suscipit eget pharetra quis, tincidunt pharetra orci.<br>Nulla ut leo purus. Suspendisse ornare diam et urna aliquam, nec vestibulum odio dapibus. Aenean arcu metus, suscipit eget pharetra quis, tincidunt pharetra orci.</p>
+            <figure class="expert__img">
+              <img src="img/photo-5.jpg" alt="Сергей Иванов" width="155" height="115">
+            </figure>
+            <p class="expert__name">Сергей Иванов</p>
+            <p class="expert__position">Топ менеджер</p>
           </li>
-          
+          <li class="swiper-slide expert__item">
+            <p>Nulla ut leo purus. Suspendisse ornare diam et urna aliquam, nec vestibulum odio dapibus. Aenean arcu metus, suscipit eget pharetra quis, tincidunt pharetra orci.<br>Nulla ut leo purus. Suspendisse ornare diam et urna aliquam, nec vestibulum odio dapibus. Aenean arcu metus, suscipit eget pharetra quis, tincidunt pharetra orci.</p>
+            <figure class="expert__img">
+              <img src="img/photo-5.jpg" alt="Сергей Иванов" width="155" height="115">
+            </figure>
+            <p class="expert__name">Сергей Иванов</p>
+            <p class="expert__position">Топ менеджер</p>
+          </li>
         </ul>
         <div class="swiper-button-prev expert__prev"></div>
         <div class="swiper-button-next expert__next"></div>
@@ -225,15 +239,25 @@
     </section>
     
     <section class="brand">
-      <div class="swiper-container brand__slider wrapper">
-        <ul class="swiper-wrapper">
-          <li class="swiper-slide brand__item">
-            
-          </li>
-          
-        </ul>
-        <div class="swiper-button-prev brand__prev"></div>
-        <div class="swiper-button-next brand__next"></div>
+      <div class="wrapper">
+        <div class="swiper-container brand__slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide brand__item">
+              <img src="img/logo-atlant.png" alt="Logo" width="232" height="91">
+            </li>
+            <li class="swiper-slide brand__item">
+              <img src="img/logo-stroifed.png" alt="Logo" width="350" height="184">
+            </li>
+            <li class="swiper-slide brand__item">
+              <img src="img/logo-dumont.png" alt="Logo" width="451" height="216">
+            </li>
+            <li class="swiper-slide brand__item">
+              <img src="img/logo-impuls.png" alt="Logo" width="112" height="117">
+            </li>
+          </ul>
+          <div class="swiper-button-prev brand__prev"></div>
+          <div class="swiper-button-next brand__next"></div>
+        </div>
       </div>
     </section>
     
@@ -243,12 +267,12 @@
           <p>Наши контакты:</p>
           <div class="contacts__address">
             <address>г. Краснодар, ул. Скороходова, 12/3</address>
-            <a href="Tel:+74957897445">тел. <span>+7 (495) 789 74 45</span></a>
-            <a href="Tel:+77777774415">факс <span>+7 7777 77441 5</span></a>
-            <a href="mailo:Industrial@gmail.com">E-mail <span>Industrial@gmail.com</span></a>
+            <a href="Tel:+74957897445"><b>тел.</b><span>+7 (495) 789 74 45</span></a>
+            <a href="Tel:+77777774415"><b>факс</b><span>+7 7777 77441 5</span></a>
+            <a href="mailto:Industrial@gmail.com"><b>E-mail</b><span>Industrial@gmail.com</span></a>
           </div>
         </div>
-        <div class="contacts__block">
+        <div class="contacts__block contacts__block--right">
           <p>Не забывайте подписываться на новости:</p>
           <form action="#" method="post" class="subscribe">
             <p>Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:</p>
@@ -281,6 +305,8 @@
       prevEl: '.brand__prev',
     },
     slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
   });
   var mySwiper = new Swiper ('.expert__slider', {
     navigation: {
