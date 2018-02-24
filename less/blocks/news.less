@@ -1,25 +1,30 @@
 .news {
-  padding-top: 100px;
+  padding-top: 88px;
   padding-bottom: 105px;
+  
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
 .news__list {
+  margin-top: 80px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: stretch;
   align-content: flex-start;
 }
 
 .news__item {
-  width: 585px;
-  margin-right: 20px;
-  
-  &:nth-child(2n) {
-    margin-right: 0;
-  }
+  width: 592px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   
   h4 {
     max-width: 100%;
+    margin-bottom: 27px;
     color: @blue;
     font-size: 24px;
     letter-spacing: 0.1em;
@@ -31,11 +36,13 @@
   
   p {
     max-width: 100%;
+    margin-top: 0;
     letter-spacing: 0.1em;
   }
   
   time {
     color: #333333;
+    margin-top: auto;
   }
   
   &:hover,
