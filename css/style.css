@@ -1390,6 +1390,7 @@ h3 {
   .menu__sublist {
     position: static;
     padding-left: 10px;
+    background-color: rgba(26, 25, 30, 0) !important;
   }
   .menu__list {
     display: none;
