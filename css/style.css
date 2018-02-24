@@ -535,6 +535,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 .header__wrap {
   display: -webkit-box;
@@ -547,6 +548,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 15px;
+  padding-bottom: 15px;
 }
 .logo {
   display: -webkit-box;
