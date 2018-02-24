@@ -1,15 +1,18 @@
-//Menu
-var navMain = document.querySelector(".menu");
-var navToggle = document.querySelector(".menu__btn");
+//Mobile menu
+$('.menu__btn').click(function() {
+  $(this).next().slideToggle();
+  $('.menu').toggleClass('menu--closed');
+  $('.menu').toggleClass('menu--opened');
+});
 
-navToggle.addEventListener("click", function() {
-  if (navMain.classList.contains("menu--closed")) {
-    navMain.classList.remove("menu--closed");
-    navMain.classList.add("menu--opened");
-  } else {
-    navMain.classList.add("menu--closed");
-    navMain.classList.remove("menu--opened");
-  }
+$('.menu__link').click(function() {
+  $('.menu__list').slideUp();
+  $('.menu').addClass('menu--closed');
+  $('.menu').removeClass('menu--opened');
+});
+
+$('.menu__open').click(function() {
+  $(this).next().slideToggle();
 });
 
 //Scroll to menu anchor
