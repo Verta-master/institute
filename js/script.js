@@ -47,10 +47,16 @@ function onScroll(event){
       'background-color': 'rgba(26, 25, 30, 0.7)',
       'transition': 'background-color 0.5s ease'
     });
+    $(".menu__sublist").css({
+      'background-color': 'rgba(26, 25, 30, 0.5)',
+    });
   } else {
     $(".header").css({
       'background-color': 'rgba(26, 25, 30, 0)',
       'transition': 'background-color 0.5s ease'
+    });
+    $(".menu__sublist").css({
+      'background-color': 'rgba(26, 25, 30, 0)',
     });
   }
   $('.menu__item a').each(function () {
