@@ -5,12 +5,6 @@ $('.menu__btn').click(function() {
   $('.menu').toggleClass('menu--opened');
 });
 
-$('.menu__link').click(function() {
-  $('.menu__list').slideUp();
-  $('.menu').addClass('menu--closed');
-  $('.menu').removeClass('menu--opened');
-});
-
 $('.menu__open').click(function() {
   $(this).next().slideToggle();
 });
